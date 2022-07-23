@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './components/Navbar'
+import MainApp from './components/mainApp'
+import { useState } from 'react'
+import About from './components/About'
 
-function App() {
+
+export default function App() {
+
+  const [mode, setMode] = useState("dark")
+
+  let toggleBar = function () {
+    if (mode === "dark") {
+      setMode("primary")
+      document.body.style.backgroundColor = "black"
+      document.body.style.color = "white"
+    }
+    else {
+      setMode("dark")
+      document.body.style.backgroundColor = "white"
+      document.body.style.color = "black"
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navbar mode={mode} toggleBar={toggleBar}/>
+      <MainApp/>
+      <hr />
+      <About/>
+    </>
+  )
 }
-
-export default App;
