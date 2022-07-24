@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Text2Speech/static/css/main.d72d4554.css",
+    "main.js": "/Text2Speech/static/js/main.7456e5d7.js",
+    "static/js/787.1b1d0e37.chunk.js": "/Text2Speech/static/js/787.1b1d0e37.chunk.js",
+    "static/media/1.jpg": "/Text2Speech/static/media/1.bda6426df85d6e8b93f6.jpg",
+    "index.html": "/Text2Speech/index.html",
+    "main.d72d4554.css.map": "/Text2Speech/static/css/main.d72d4554.css.map",
+    "main.7456e5d7.js.map": "/Text2Speech/static/js/main.7456e5d7.js.map",
+    "787.1b1d0e37.chunk.js.map": "/Text2Speech/static/js/787.1b1d0e37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d72d4554.css",
+    "static/js/main.7456e5d7.js"
+  ]
+}
